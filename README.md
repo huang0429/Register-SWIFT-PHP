@@ -231,9 +231,19 @@ pod init
 
 打開 Podfile 
 
-加入 `pod 'Alamofire'`
+加入 `pod 'Alamofire', '~> 4.3'`
 
-![](https://i.imgur.com/8ykSAOd.jpg)
+```swift=
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target '1011LoginDemo' do
+ use_frameworks!
+ pod 'Alamofire', '~> 4.3'
+end
+```
+
+![](https://i.imgur.com/fXGIyUu.jpg)
 
 儲存後關閉
 
